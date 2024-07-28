@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D114D46B2C54F4FA009AF0FB /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D114D46A2C54F4FA009AF0FB /* ChatView.swift */; };
+		D114D46E2C54F5A2009AF0FB /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D114D46D2C54F5A2009AF0FB /* CircularProfileImageView.swift */; };
+		D114D4702C54F5B5009AF0FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D114D46F2C54F5B5009AF0FB /* User.swift */; };
+		D114D4722C54F849009AF0FB /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D114D4712C54F849009AF0FB /* ProfileViewModel.swift */; };
+		D114D4742C550068009AF0FB /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D114D4732C550068009AF0FB /* ChatMessageCell.swift */; };
+		D114D4762C5500B4009AF0FB /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = D114D4752C5500B4009AF0FB /* ChatBubble.swift */; };
 		D1800B242C3D2F5500A80F48 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1800B232C3D2F5500A80F48 /* SignUpView.swift */; };
 		D18BE05C2C3E8B9600912076 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18BE05B2C3E8B9600912076 /* InboxView.swift */; };
 		D18BE05F2C3E8C8C00912076 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18BE05E2C3E8C8C00912076 /* ActiveNowView.swift */; };
@@ -22,6 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D114D46A2C54F4FA009AF0FB /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		D114D46D2C54F5A2009AF0FB /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
+		D114D46F2C54F5B5009AF0FB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = MessengerClone/Core/Components/User.swift; sourceTree = SOURCE_ROOT; };
+		D114D4712C54F849009AF0FB /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		D114D4732C550068009AF0FB /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		D114D4752C5500B4009AF0FB /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		D1800B232C3D2F5500A80F48 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		D18BE05B2C3E8B9600912076 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		D18BE05E2C3E8C8C00912076 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
@@ -48,6 +60,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D114D4692C54F4EC009AF0FB /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				D114D46A2C54F4FA009AF0FB /* ChatView.swift */,
+				D114D4732C550068009AF0FB /* ChatMessageCell.swift */,
+				D114D4752C5500B4009AF0FB /* ChatBubble.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		D114D46C2C54F594009AF0FB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D114D46D2C54F5A2009AF0FB /* CircularProfileImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		D18BE05A2C3E8B8800912076 /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				D1E490FF2C50F14C00942BF0 /* SettingOptionsViewModel.swift */,
+				D114D4712C54F849009AF0FB /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -148,6 +179,8 @@
 		D1FACB992C3D180000F89A26 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D114D46C2C54F594009AF0FB /* Components */,
+				D114D4692C54F4EC009AF0FB /* Chat */,
 				D1B3A78D2C50EF680029CDED /* Profile */,
 				D1B3A78A2C50E43C0029CDED /* NewMessage */,
 				D18BE05D2C3E8C6700912076 /* ActiveNow */,
@@ -175,6 +208,7 @@
 		D1FACB9C2C3D181300F89A26 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D114D46F2C54F5B5009AF0FB /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -273,10 +307,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D114D4702C54F5B5009AF0FB /* User.swift in Sources */,
 				D18BE0612C3E8EDC00912076 /* InboxRowView.swift in Sources */,
+				D114D46E2C54F5A2009AF0FB /* CircularProfileImageView.swift in Sources */,
 				D1B3A7912C50EF960029CDED /* ProfileView.swift in Sources */,
 				D1B3A78C2C50E44A0029CDED /* NewMessageView.swift in Sources */,
 				D1800B242C3D2F5500A80F48 /* SignUpView.swift in Sources */,
+				D114D4742C550068009AF0FB /* ChatMessageCell.swift in Sources */,
+				D114D4762C5500B4009AF0FB /* ChatBubble.swift in Sources */,
+				D114D4722C54F849009AF0FB /* ProfileViewModel.swift in Sources */,
+				D114D46B2C54F4FA009AF0FB /* ChatView.swift in Sources */,
 				D1FACBA12C3D185600F89A26 /* LoginView.swift in Sources */,
 				D18BE05C2C3E8B9600912076 /* InboxView.swift in Sources */,
 				D1E491002C50F14C00942BF0 /* SettingOptionsViewModel.swift in Sources */,
@@ -423,6 +463,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +492,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -6,15 +6,23 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct ProfileView: View {
+    let user: User
+    @StateObject var viewModel = ProfileViewModel()
+    
     var body: some View {
         VStack {
             VStack {
-                Image(systemName: "person.circle.fill")
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                    .foregroundColor(Color(.systemGray4))
+                PhotosPicker(selection: $viewModel.selectedItem) {
+                    let image = viewModel.profileImage ?? user.profileImage
+                    
+                    CircularProfileImageView(
+                        image: image,
+                        size: .large
+                    )
+                }
                 Text("Steve")
                     .font(.title2)
                     .fontWeight(.semibold)
@@ -46,5 +54,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView()
+    ProfileView(user: User.MOCK_USER)
 }
